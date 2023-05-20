@@ -7,7 +7,7 @@ The frontend was developed using ReactJS with Typescript. As CSS framework the d
 
 .. toctree::
 
-Structure
+  Structure
 
 Backend
 ----------------
@@ -15,4 +15,4 @@ The backend was built using Python Django. For developing the API, the Django Re
 
 .. toctree::
 
-API
+  API
