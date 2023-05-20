@@ -14,5 +14,6 @@ Contents
 .. toctree::
 
    usage
-   development
+   frontend
+   backend
    process
