@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'ThinkReal.'
+copyright = '2023, Team YAWN'
+author = 'Team YAWN'
 
 release = '0.1'
 version = '0.1.0'
