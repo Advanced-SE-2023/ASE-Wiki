@@ -13,6 +13,6 @@ Contents
 
 .. toctree::
 
-   Usage
-   Development
-   Process
+   usage
+   development
+   process
