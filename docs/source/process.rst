@@ -13,16 +13,12 @@ Each feature (user story) has to be developed using its own branch. Before mergi
 
 .. image:: https://github.com/Advanced-SE-2023/ThinkReal.-Wiki/blob/main/docs/source/Kanban-Board.png?raw=true
     :alt: Screenshot of Kanban Board on GitHub Projects
-    
-.. figure:: /docs/source/Kanban-Board.png
-    :align: right
-    :figwidth: 200px
 
 Branch Management
 --------------------
 For this project the Gitflow workflow is used as branch management. Each feature gets its own branch. After being approved, the feature branch is merged into the development branch. For each release the development branch is merged into the main branch. As this is a small project, the release branch is skipped. Bugs can be solved in a Hotfix branch which can be directly merged into main if necessary.
 
-.. image:: /docs/source/clipping-of-git-graph_frontend.png
+.. image:: https://github.com/Advanced-SE-2023/ThinkReal.-Wiki/blob/main/docs/source/clipping-of-git-graph_frontend.png?raw=true
     :alt: Section of the Git Graph of the Frontend
 
 User Stories
@@ -196,5 +192,5 @@ Pending
 Burndown Chart
 -----------------
 
-.. image:: /docs/source/Gantt-Chart.png
+.. image:: https://github.com/Advanced-SE-2023/ThinkReal.-Wiki/blob/main/docs/source/Gantt-Chart.png?raw=true
     :alt: Gantt Chart of Process on User Stories
