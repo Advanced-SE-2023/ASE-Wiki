@@ -1,9 +1,6 @@
-Template for the Read the Docs tutorial
+ThinkReal. Wiki
 =======================================
+Access here: https://ase-wiki.readthedocs.io/en/latest/
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+Created using the Readthedocs.org template.
