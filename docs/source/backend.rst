@@ -60,3 +60,26 @@ Users
 
 API
 -----------
+The following endpoints are available:
+
+Posts
++++++++++++
+/posts
+/postsearch
+/users/<user_uuid>/posts
+
+Users
++++++++++++
+/users
+/usersearch
+
+Following
+++++++++++++
+/follow
+/users/<user_uuid>/followers
+/users/<user_uuid>/followed
+
+Comments
+++++++++++++
+/comments
+/posts/<post_id>/comments
