@@ -11,7 +11,7 @@ At the beginning of each sprint, a new view in the Kanban board for that specifi
 
 Each feature (user story) has to be developed using its own branch. Before merging this branch into the development branch, the pull request has to be tested and approved by at least one other developer.
 
-.. image:: /Kanban-Board.png
+.. image:: /docs/source/Kanban-Board.png
     :alt: Screenshot of Kanban Board on GitHub Projects
 
 Branch Management
