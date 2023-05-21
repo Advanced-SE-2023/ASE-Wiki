@@ -13,6 +13,10 @@ Each feature (user story) has to be developed using its own branch. Before mergi
 
 .. image:: /docs/source/Kanban-Board.png
     :alt: Screenshot of Kanban Board on GitHub Projects
+    
+.. figure:: /docs/source/Kanban-Board.png
+    :align: right
+    :figwidth: 200px
 
 Branch Management
 --------------------
