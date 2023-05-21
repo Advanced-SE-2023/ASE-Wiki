@@ -5,9 +5,9 @@ The backend was built using Python Django. For developing the API, the Django Re
 
 Models
 -----------
-In Django, database tables are represented by models. The models of ThinkReal. are grouped into the *feed* and *users* sections of the backend. In the following the models are listed with a short explanation and their fields.
-
-Feed
+In Django, database tables are represented by models. The models of ThinkReal. are grouped into the *feed- and *users* sections of the backend. In the following the models are listed with a short explanation and their fields.
+- 
+Feed- 
 ++++++++++++
 **Post:** Model representing a user post. It references an instance of CustomUser2 as the post author.
 
@@ -95,17 +95,17 @@ Posts
 | /postsearch
 | /users/<user_uuid>/posts
 
-/posts returns and modifies the set of all Post objects.
-/postsearch returns all Post objects filtered by author username as query parameter (username=<query>).
-/users/<user_uuid>/posts returns all post of a user by uuid.
+- /posts returns and modifies the set of all Post objects.
+- /postsearch returns all Post objects filtered by author username as query parameter (username=<query>).
+- /users/<user_uuid>/posts returns all post of a user by uuid.
 
 Users
 +++++++++++
 | /users
 | /usersearch
 
-/users returns and modifies the set of all user objects.
-/usersearch returns all user objects filtered by username as query parameter (username=<query>).
+- /users returns and modifies the set of all user objects.
+- /usersearch returns all user objects filtered by username as query parameter (username=<query>).
 
 Following
 ++++++++++++
@@ -113,39 +113,39 @@ Following
 | /users/<user_uuid>/followers
 | /users/<user_uuid>/followed
 
-/follow returns and modifies all Follow relationship objects.
-/users/<user_uuid>/followers returns all Follow relationship objects of the followed Users of a User.
-/users/<user_uuid>/followed returns all Follow relationship objects of the follower Users of a User.
+- /follow returns and modifies all Follow relationship objects.
+- /users/<user_uuid>/followers returns all Follow relationship objects of the followed Users of a User.
+- /users/<user_uuid>/followed returns all Follow relationship objects of the follower Users of a User.
 
 Comments
 ++++++++++++
 | /comments
 | /posts/<post_id>/comments
 
-/comments is a collection of all comments and the endpoint for creation, deletion, 
+- /comments is a collection of all comments and the endpoint for creation, deletion, 
 and modification of comment objects.
-/posts/<post_id>/comments returns a list of comments of a given post.
+- /posts/<post_id>/comments returns a list of comments of a given post.
 
 Notifications
 ++++++++++++
 | /notifications
 | /users/<user_uuid>/notifications
 
-/notifications is a collection of all notifications and the endpoint for creation, deletion, 
+- /notifications is a collection of all notifications and the endpoint for creation, deletion, 
 and modification of Notification objects. 
-/users/<user_uuid>/notifications gives a user-specific list of notifications to be polled 
+- /users/<user_uuid>/notifications gives a user-specific list of notifications to be polled 
 by the frontend.
 
 Required arguments
 POST:
-* action: ['POS', 'COM', 'REA', 'FOL']
-* refd_notif_recipient: uuid of recipient user (e.g. post author receiving a comment)
-* refd_notif_sender: uuis of sender user (e.g. commenter on post)
-* refd_post: only required for action 'POS', post_id
+- action: ['POS', 'COM', 'REA', 'FOL']
+- refd_notif_recipient: uuid of recipient user (e.g. post author receiving a comment)
+- refd_notif_sender: uuis of sender user (e.g. commenter on post)
+- refd_post: only required for action 'POS', post_id
     
 PUT:
-* notification_id : integer
-* is_seen: False by default, to be updated to True when the user sees the notification
+- notification_id : integer
+- is_seen: False by default, to be updated to True when the user sees the notification
 
 
 
