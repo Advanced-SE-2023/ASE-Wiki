@@ -51,30 +51,39 @@ UI Components
 
 Comments
 ++++++++++++++++
+This component handles comment retrieval, display, and submission for a specific post. It fetches comments from the API based on the provided post ID and authentication token. The comments are rendered as a list of cards, showing the commenter's username and their comment message. Users can enter new comments through an input field, and when the "Comment" button is clicked, the new comment is sent to the API and stored.
 
 Feed
 ++++++++++++++++
+This component handles the retrieval and rendering of a personalized feed of posts, based on the user's followed users. It retrieves the followed users from the API and stores them in an array. It also fetches posts from the API and filters them based on the user's own posts and the followed users' posts. The usernames, post content, and post IDs are stored in separate arrays. The component renders the Post UI component, passing the arrays as props to display the posts.
 
 Post
 ++++++++++++++++
+This component handles rendering a list of posts with expandable comments. It receives arrays of usernames, post content, and post IDs as props, along with a render function to customize the display of each item in the arrays. The component uses material-ui components such as Grid, Container, Card, Button, Typography, and IconButton to structure and style the posts. It also uses the Collapse component to toggle the visibility of comments when the user clicks on the expand icon. The component utilizes the useAuth hook to access the authentication token and user ID. It provides functionality for reacting to posts and posting comments using the api helper functions. The handleExpandClick function expands or collapses the comments section based on the post index. Comments are then displayed using the Comments UI component.
 
 Search
 ++++++++++++++++
+This component provides a search feature for user names. It includes a search input field, a search button, and displays search results. When a user enters a search term and clicks the search button, the component sends a request to the API to retrieve matching user names. The search results are displayed below the search field using the SearchResults UI component.
 
 SearchResults
 ++++++++++++++++
+This component displays the search results for user names. It receives an array of usernames and corresponding Cognito IDs as props. If there are no search results (i.e., the usernames array is empty or undefined), it displays a message indicating that there are no results. Otherwise, it renders a list of cards, with each card representing a search result. Clicking on a card triggers the goToUserPage function, which navigates the user to the user page associated with the selected result by using the Cognito ID.
 
 Theme
 +++++++++++++++++
+The code defines a custom theme using the Theme interface from the @aws-amplify/ui-react package. The theme contains overrides for different color modes. In this case, the color mode is set to "dark".
 
 Title
 ++++++++++++++++
+This component represents a title bar. If the user is authenticated, it displays buttons and icons for navigating to feed, user profile, and search page, as well as logout.
 
 UserPost
 ++++++++++++++++
+This component represents a form for users to create posts. It includes an input field for entering the post content and a button to submit the post. When the user clicks the "Post" button, an API request is made to save the post on the server. If the post is successful and the content is not empty, it updates the postedToday state.
 
 Routing Components
 --------------------
 
 UserRoute
 +++++++++++++++++++
+This component is used to protect routes that require authentication. It uses the `useAuthenticator`hook from the  @aws-amplify/ui-react library to check the authentication status. If the user is not authenticated, the component renders a <Navigate> component from react-router-dom. This redirects the user to the "/login" route. If the user is authenticated, the component simply renders its children. This allows the protected routes to be displayed.
