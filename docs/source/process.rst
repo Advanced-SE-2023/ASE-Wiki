@@ -12,6 +12,7 @@ At the beginning of each sprint, a new view in the Kanban board for that specifi
 Each feature (user story) has to be developed using its own branch. Before merging this branch into the development branch, the pull request has to be tested and approved by at least one other developer.
 
 This image is a Screenshot of the GitHub Project Kanban board:
+
 .. image:: https://github.com/Advanced-SE-2023/ThinkReal.-Wiki/blob/main/docs/source/Kanban-Board.png?raw=true
     :alt: Screenshot of Kanban Board on GitHub Projects
 
@@ -20,6 +21,7 @@ Branch Management
 For this project the Gitflow workflow is used as branch management. Each feature gets its own branch. After being approved, the feature branch is merged into the development branch. For each release the development branch is merged into the main branch. As this is a small project, the release branch is skipped. Bugs can be solved in a Hotfix branch which can be directly merged into main if necessary.
 
 This image shows a snippet of the Git graph of the frontend:
+
 .. image:: https://github.com/Advanced-SE-2023/ThinkReal.-Wiki/blob/main/docs/source/clipping-of-git-graph_frontend.png?raw=true
     :alt: Section of the Git Graph of the Frontend
 
