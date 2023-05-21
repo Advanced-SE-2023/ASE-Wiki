@@ -188,3 +188,9 @@ Pending
 | Acceptance criteria:
 - There is a chat function to write with the other user.
 - The chat works in real time
+
+Burndown Chart
+-----------------
+
+.. image:: /docs/source/Gantt-Chart.png
+    :alt: Gantt Chart of Process on User Stories
