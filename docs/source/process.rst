@@ -3,22 +3,22 @@ Development Process
 
 Tools
 -------------
-As a version control system, GitHub was used, because all of the group members were most comfortable with it. To keep switching between tools to a minimum, the development team decided to use GitHub Project for organizing. They set up a Kanban board with all their user stories there. 
+As a version control system, GitHub is used, because all of the group members are most comfortable with it. To keep switching between tools to a minimum, the development team decided to use GitHub Project for organizing. They set up a Kanban board with all their user stories there. 
 
 Process
 --------------
-At the beginning of each sprint, a new view in the Kanban board for that specific sprint was created and all user stories planned to finish during the sprint were added. Then each user story was split up into smaller tasks as GitHub issues. During the sprint each developer assigned themselves to the issues that they were interested in tackling and kept track of their process by keeping the issue in the correct column of the Kanban board.
+At the beginning of each sprint, a new view in the Kanban board for that specific sprint is created and all user stories planned to finish during the sprint are added. Then each user story is split up into smaller tasks as GitHub issues. During the sprint each developer assigns themselves to the issues that they are interested in tackling and keeps track of their process by keeping the issue in the correct column of the Kanban board.
 
-Each feature (user story) had to be developed using its own branch. Before merging this branch into the development branch, the pull request had to be tested and approved by at least one other developer.
+Each feature (user story) has to be developed using its own branch. Before merging this branch into the development branch, the pull request has to be tested and approved by at least one other developer.
 
 Branch Management
 --------------------
-
+For this project the Gitflow workflow is used as branch management. Each feature gets its own branch. After being approved, the feature branch is merged into the development branch. For each release the development branch is merged into the main branch. As this is a small project, the release branch is skipped. Bugs can be solved in a Hotfix branch which can be directly merged into main if necessary.
 
 User Stories
 --------------
 
-For each feature or user requirement the development team has specified a user story. The user stories were then used to guide development as they included clear requirements and acceptance criteria. In the following the finished as well as the still pending user stories are listed.
+For each feature or user requirement the development team has specified a user story. The user stories are used to guide development as they include clear requirements and acceptance criteria. In the following the finished as well as the still pending user stories are listed.
 
 Finished
 +++++++++++
@@ -182,8 +182,3 @@ Pending
 | Acceptance criteria:
 - There is a chat function to write with the other user.
 - The chat works in real time
-
-Burn-down Chart
----------------
-
-???
