@@ -18,6 +18,9 @@ Branch Management
 --------------------
 For this project the Gitflow workflow is used as branch management. Each feature gets its own branch. After being approved, the feature branch is merged into the development branch. For each release the development branch is merged into the main branch. As this is a small project, the release branch is skipped. Bugs can be solved in a Hotfix branch which can be directly merged into main if necessary.
 
+.. image:: /docs/source/clipping-of-git-graph_frontend.png
+    :alt: Section of the Git Graph of the Frontend
+
 User Stories
 --------------
 
