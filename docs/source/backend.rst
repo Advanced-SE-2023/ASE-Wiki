@@ -5,9 +5,9 @@ The backend was built using Python Django. For developing the API, the Django Re
 
 Models
 -----------
-In Django, database tables are represented by models. The models of ThinkReal. are grouped into the *feed- and *users* sections of the backend. In the following the models are listed with a short explanation and their fields.
-- 
-Feed- 
+In Django, database tables are represented by models. The models of ThinkReal. are grouped into the *feed* and *users* sections of the backend. In the following the models are listed with a short explanation and their fields.
+
+Feed
 ++++++++++++
 **Post:** Model representing a user post. It references an instance of CustomUser2 as the post author.
 
